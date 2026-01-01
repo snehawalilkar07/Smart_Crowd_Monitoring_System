@@ -4,10 +4,11 @@ from datetime import datetime
 from email.message import EmailMessage
 import smtplib, ssl
 from dotenv import load_dotenv
+load_dotenv()  # load environment variables from .env file
 
 # =================== PAGE CONFIG ===================
 st.set_page_config("🚦 DeepVision Crowd Monitor", layout="wide")
-st.title("🚦 DeepVision Crowd Estimation System")
+st.title("🚦 DeepVision : Smart Crowd Estimation System")
 
 # =================== SESSION STATE ===================
 for key, val in {
