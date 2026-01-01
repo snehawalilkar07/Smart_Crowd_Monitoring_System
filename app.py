@@ -8,7 +8,7 @@ load_dotenv()  # load environment variables from .env file
 
 # =================== PAGE CONFIG ===================
 st.set_page_config("🚦 DeepVision Crowd Monitor", layout="wide")
-st.title("🚦 DeepVision : Smart Crowd Estimation System")
+st.title("🚦 DeepVision : Smart Crowd Monitoring System")
 
 # =================== SESSION STATE ===================
 for key, val in {
