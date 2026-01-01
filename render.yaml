@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: deepvision-crowd-monitor
+    env: python
+    region: oregon
+    plan: free   # change to "starter" if you want more RAM
+    branch: main  # branch in your repo
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run app.py --server.port $PORT
+    envVars:
+      - key: ALERT_EMAIL
+        sync: false
+      - key: ALERT_PASSWORD
+        sync: false
+    pythonVersion: "3.12"
